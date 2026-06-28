@@ -335,13 +335,13 @@
         /* Closing Section */
         .closing-section {
             background: linear-gradient(to bottom, transparent, var(--blush));
-            padding: 100px 20px;
+            padding: 100px 20px 40px 20px;
             text-align: center;
         }
 
         .closing-box {
             max-width: 600px;
-            margin: 0 auto;
+            margin: 0 auto 50px auto;
             border: 1px solid var(--gold);
             padding: 40px;
             background: rgba(255, 255, 255, 0.8);
@@ -365,12 +365,37 @@
             margin-bottom: 15px;
         }
 
+        /* --- PREMIUM FOOTER --- */
+        footer {
+            border-top: 1px solid rgba(214, 175, 55, 0.2);
+            padding: 20px;
+            text-align: center;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            color: var(--charcoal);
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+
+        footer span {
+            font-family: 'Cinzel Decorative', serif;
+            color: var(--gold-dark);
+            font-weight: bold;
+        }
+
+        footer i {
+            color: #e74c3c;
+            margin: 0 3px;
+            animation: heartBeat 1.5s infinite;
+        }
+
         /* Responsive adjustments */
         @media (max-width: 768px) {
             .hero h1 { font-size: 3.5rem; }
             .hero h1 span { font-size: 1.8rem; }
             .event-name { font-size: 2.3rem; }
             .closing-box { padding: 25px; }
+            footer { font-size: 0.75rem; letter-spacing: 1px; }
         }
     </style>
 </head>
@@ -379,9 +404,8 @@
     <!-- Floating Floral Petals -->
     <div id="petals-container"></div>
 
-    <!-- Music Player (Hidden Source, Audio element) -->
-    <!-- Swap the src URL with your preferred ambient track -->
-    <audio id="bg-music" loop src="bismillah.mp3.mpeg"></audio>
+    <!-- Music Player -->
+    <audio id="bg-music" loop src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
     <button class="music-btn" onclick="toggleMusic()" title="Play/Pause Music">
         <i id="music-icon" class="fas fa-music"></i>
     </button>
@@ -434,7 +458,7 @@
                     <div class="event-details">
                         <p>Join us as we smother the beautiful bride and handsome groom in traditional turmeric configurations.</p>
                         <br>
-                        
+                        <p><strong>Dress Code:</strong> Traditional Yellow / Vibrant Florals</p>
                     </div>
                 </div>
 
@@ -447,7 +471,7 @@
                     <div class="event-details">
                         <p>Welcoming the festive groom's procession followed by the sacred binding of hearts in the presence of loved ones.</p>
                         <br>
-                       
+                        <p><strong>Dress Code:</strong> Royal Ethnic / Regal Accents</p>
                     </div>
                 </div>
 
@@ -460,20 +484,25 @@
                     <div class="event-details">
                         <p>An elegant night of laughter, delicious banquets, and heartfelt speeches to mark our newly embarked chapter.</p>
                         <br>
-                      
+                        <p><strong>Dress Code:</strong> Sophisticated Western / Fusion Luxury</p>
                     </div>
                 </div>
 
             </div>
         </section>
 
-        <!-- 4. Premium Elegant Final Blessings Section -->
+        <!-- 4. Premium Elegant Final Blessings Section & Footer -->
         <section class="closing-section">
             <div class="closing-box">
                 <p class="closing-message">
                     "With the blessings of Allah and our families, we invite you to celebrate our joyous union and share in our happiness."
                 </p>
             </div>
+            
+            <!-- Added Footer -->
+            <footer>
+                Design by <span>invitly elite</span> with <i class="fa-solid fa-heart"></i>
+            </footer>
         </section>
 
     </div>
